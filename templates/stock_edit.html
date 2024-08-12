@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit stock reserve</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/kitchen_styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar Section -->
+    {% include 'navbar-kitchen.html' %}
+
+    <!-- Edit Section -->
+    <div class="container container-edit">
+        <p class="edit-text">เพิ่ม ปีกไก่ ใน Stock หลัก</p>
+        <p class="edit-text-form">จำนวน</p>
+        <input type="number" class="form-control" id="quantity5" min="1" value="1">
+        <p class="edit-text-form">กรัม</p>
+        <button class="edit-confirm"><a href="/kitchen_stock_main">ยืนยัน</a></button>
+        <button class="edit-cancel"><a href="/kitchen_stock_main">ยกเลิก</a></button>
+    </div>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
